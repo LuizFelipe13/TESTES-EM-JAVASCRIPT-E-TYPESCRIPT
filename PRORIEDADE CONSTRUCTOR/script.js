@@ -18,3 +18,14 @@ let pessoa2 = new Pessoa('Pedro', 22);
 
 console.log(pessoa1.constructor); // [Function: Pessoa]
 console.log(pessoa2.constructor); // [Function: Pessoa]
+
+// Outra forma de criar objetos
+function criarArvore(especie, temFrutos) {
+    return {
+        especie: especie,
+        temFrutos: temFrutos
+    };
+}
+let arvore = criarArvore('Manga', true);
+console.log(arvore); // {especie: 'Manga', temFrutos: true}
+console.log(arvore.constructor); // [Function: Object]
